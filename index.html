@@ -1,0 +1,588 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<title>社区应用系统</title>
+		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+		<link href="css/style.css" rel='stylesheet' type='text/css' />
+		<link href="css/font-awesome.min.css" rel='stylesheet' type='text/css' />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<script type="application/x-javascript">
+			addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+
+			function hideURLbar() { window.scrollTo(0, 1); }
+		</script>
+
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="js/hover_pack.js"></script>
+		<!---strat-slider---->
+		<link rel="stylesheet" type="text/css" href="css/slider.css" />
+		<script type="text/javascript" src="js/modernizr.custom.28468.js"></script>
+		<script type="text/javascript" src="js/jquery.cslider.js"></script>
+		<script type="text/javascript">
+			$(function() {
+
+				$('#da-slider').cslider({
+					autoplay: true,
+					bgincrement: 450
+				});
+
+			});
+		</script>
+		<!---//end-slider---->
+		<script type="text/javascript" src="js/jquery.openCarousel.js"></script>
+		<script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('#horizontalTab').easyResponsiveTabs({
+					type: 'default', //Types: default, vertical, accordion           
+					width: 'auto', //auto or any width like 600px
+					fit: true // 100% fit in a container
+				});
+			});
+		</script>
+	</head>
+	<style type="text/css">
+		.btn-red {
+			background-color: white;
+			border: 1px solid #d9534f;
+			border-radius: 0px;
+			color: #d9534f;
+		}
+		
+		.btn-red:hover {
+			background-color: #d9534f;
+			color: white;
+		}
+		
+		.communitya {
+			display: block;
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			margin-top: 10px;
+		}
+		
+		.pull-left {
+			color: #918f8f;
+		}
+		
+		@media screen and (min-width: 768px) {
+			.carousel-indicators {
+				bottom: 100px;
+			}
+		}
+	</style>
+
+	<body>
+		<div class="top-header">
+			<div class="container">
+				<p class="m_1">
+					<a href="#" class="heada">首页</a>&nbsp;|&nbsp;
+					<a href="#" class="heada">登录</a>&nbsp;|&nbsp;
+					<a href="http://www.whu.edu.cn/" target="_blank" class="heada">注册</a>
+				</p>
+				<div class="clear"> </div>
+		</div>
+		<div class="bottom-header">
+			<div class="container">
+				<div class="header_top-responsive">
+					<div class="logo_responsive">
+						<a href="index.html">
+							<img src="images/logo.png" alt="" /> </a>
+					</div>
+					<div class="search_responsive">
+						<input type="text" placeholder="站内搜索" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = '站内搜索';}">
+						<input type="submit" value="">
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="h_menu4">
+					<!-- start h_menu4 -->
+					<a class="toggleMenu" href="#">菜单栏</a>
+					<ul class="nav">
+						<li>
+							<a href="#" id="union_survey">物业管理</a>
+							<ul>
+								<li>
+									<a href="#">报修管理</a>
+								</li>
+								<li>
+									<a href="#">房屋管理</a>
+								</li>
+								<li>
+									<a href="#">车位管理</a>
+								</li>
+								<li>
+									<a href="#">公告管理</a>
+								</li>
+								<li>
+									<a href="#">通知管理</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">快捷通道</a>
+							<ul>
+								<li>
+									<a href="#">找书记</a>
+								</li>
+								<li>
+									<a href="#">找委员会</a>
+								</li>
+								<li>
+									<a href="#">找物业</a>
+								</li>
+								<li class="last">
+									<a href="#">找群团</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">便民服务</a>
+							<ul>
+								<!--<li>
+									<a href="community.html">大病救助</a>
+								</li>-->
+								<li>
+									<a href="community.html">大病救助</a>
+								</li>
+								<li>
+									<a href="societies.html">权益保护</a>
+								</li>
+								<li>
+									<a href="film_news.html">普惠服务</a>
+								</li>
+								<li>
+									<a href="film_news.html">宣讲课堂</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">社区发布</a>
+							<ul>
+								
+								<li class="last">
+									<a href="#">社区发布</a>
+								</li>
+							</ul>
+						</li>
+						<li class="logo">
+							<a href="index.html"><img src="images/logo6.png" alt="" /></a>
+						</li>
+						<li>
+							<a href="#">一键提报</a>
+							<ul>
+								<li class="last">
+									<a href="#">意见箱</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">志愿服务</a>
+							<ul>
+								<li>
+									<a href="#">献爱心</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">角色管理</a>
+							<ul>
+								<li>
+									<a href="#">社区工作人员</a>
+								</li>
+								<li>
+									<a href="#">角色新增</a>
+								</li>
+								<li>
+									<a href="#">用户分配</a>
+								</li>
+								<li>
+									<a href="#">子菜单分配</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">权限分配</a>
+							<ul>
+								<li>
+									<a href="#">系统主菜单权限</a>
+								</li>
+								<li>
+									<a href="#">角色权限</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<script type="text/javascript" src="js/nav.js"></script>
+				</div>
+				<!-- end h_menu4 -->
+				<div class="search">
+					<input type="text" placeholder="站内搜索" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = '站内搜索';}">
+					<input type="submit" value="">
+				</div>
+				<div class="clear5"></div>
+			</div>
+		</div>
+		<div id="myCarousel" class="carousel slide">
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="item active">
+					<img src="images/1.jpg" alt="First slide">
+				</div>
+				<div class="item">
+					<img src="images/2.jpg" alt="Second slide">
+				</div>
+				<div class="item">
+					<img src="images/1.jpg" alt="Second slide">
+				</div>
+			</div>
+			<a hidden="hidden" class="carousel-control left" id="carleft" href="#myCarousel" data-slide="prev">&lsaquo;
+			</a>
+			<a hidden="hidden" class="carousel-control right" id="carright" href="#myCarousel" data-slide="next">&rsaquo;
+			</a>
+		</div>
+		<div class="main">
+			<div class="content-top">
+				<div class="container">
+					<div class="row content_grid1">
+						<div class="col-md-4 popular_topics">
+							<ul class="topic_grid">
+								<li class="list1"><i class="speech"> </i>
+									<h3 class="m_3">社区公告</h3>
+									<div class="clear5"></div>
+								</li>
+								<li class="list2">
+									<div class="row">
+										<div class="col-sm-2">
+											<img src="images/logo4.png" height="50px" width="50px" />
+										</div>
+										<div class="col-sm-10">
+											<p class="communitya">
+												<a href="#" title="校工会党支部开展强“三性”去“四化”“两学一做”主题党日活动">校工会党支部开展强“三性”去“四化”“两学一做”主题党日活动</a>
+												<span class="pull-left">2014-12-24</span>
+											</p>
+										</div>
+									</div>
+								</li>
+								<li class="list2">
+									<div class="row">
+										<div class="col-sm-2">
+											<img src="images/logo4.png" height="50px" width="50px" />
+										</div>
+										<div class="col-sm-10">
+											<p class="communitya">
+												<a href="#" title="中国矿业大学工会同仁来校交流调研">中国矿业大学工会同仁来校交流调研</a>
+												<span class="pull-left">2014-12-24</span>
+											</p>
+
+										</div>
+									</div>
+
+								</li>
+								<li class="list2">
+									<div class="row">
+										<div class="col-sm-2">
+											<img src="images/logo4.png" height="50px" width="50px" />
+										</div>
+										<div class="col-sm-10">
+											<p class="communitya">
+												<a href="#">湖北工程学院工会来校交流调研</a>
+												<span class="pull-left">2014-12-24</span>
+											</p>
+										</div>
+									</div>
+
+								</li>
+								<li class="list2">
+									<div class="row">
+										<div class="col-sm-2">
+											<img src="images/logo4.png" height="50px" width="50px" />
+										</div>
+										<div class="col-sm-10">
+											<p class="communitya">
+												<a href="#" title="我校工会机关工会小组开展“东湖绿道健康行”活动">我校工会机关工会小组开展“东湖绿道健康行”活动</a>
+												<span class="pull-left">2014-12-24</span>
+											</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-4 popular_topics1">
+							<ul class="topic_grid">
+								<li class="list1"><i class="book"> </i>
+									<h3 class="m_3">社区服务</h3>
+									<div class="clear5"></div>
+								</li>
+								<li class="list2">
+									<a href="#">中南医院举办“向快乐出发”快闪活动</a>
+								</li>
+								<li class="list2">
+									<a href="#">医学部机关成功举办第一届羽毛球比赛</a>
+								</li>
+								<li class="list2">
+									<a href="#">资源与环境科学学院成功举办2017年春季师生运动会</a>
+								</li>
+								<li class="list2">
+									<a href="#">人民医院举办“天使寻缘 相约5.20”青年联谊活动</a>
+								</li>
+								<li class="list2">
+									<a href="#">测绘学院师生羽毛球联谊赛成功举行</a>
+								</li>
+								<li class="list2">
+									<a href="#">测绘学院举办2017年春季师生运动会</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-4">
+							<ul class="topic_grid">
+								<li class="list1"><i class="megaphone"> </i>
+									<h3 class="m_3">社区条例</h3>
+									<div class="clear5"></div>
+								</li>
+
+								<li class="list2">
+									<p class="communitya">
+										<i class="fa fa-caret-right" style="color: #C80000;"></i>&nbsp;
+										<a href="#" title="第七届教职工代表大会第四次会议的通知">第七届教职工代表大会第四次会议的通知</a>
+									</p>
+								</li>
+
+								<li class="list2">
+									<p class="communitya">
+										<i class="fa fa-caret-right" style="color: #C80000;"></i>&nbsp;
+										<a href="#" title="女教职工庆三八“徜徉珞珈 拥抱春天”活动的通知">女教职工庆三八“徜徉珞珈 拥抱春天”活动的通知</a>
+									</p>
+								</li>
+								<li class="list2">
+									<p class="communitya">
+										<i class="fa fa-caret-right" style="color: #C80000;"></i>&nbsp;
+										<a href="#" title="庆祝 “三·八”国际妇女节系列活动的通知">庆祝 “三·八”国际妇女节系列活动的通知</a>
+									</p>
+								</li>
+								<li class="list2">
+									<p class="communitya">
+										<i class="fa fa-caret-right" style="color: #C80000;"></i>&nbsp;
+										<a href="#" title="关于下发《武汉大学工会工作创新奖评选办法》的通知">关于下发《武汉大学工会工作创新奖评选办法》的通知</a>
+									</p>
+								</li>
+								<li class="list2">
+									<p class="communitya">
+										<i class="fa fa-caret-right" style="color: #C80000;"></i>&nbsp;
+										<a href="#" title="关于年度师德标兵的通知">关于年度师德标兵的通知</a>
+									</p>
+								</li>
+
+								<li class="list2">
+									<p class="communitya">
+										<i class="fa fa-caret-right" style="color: #C80000;"></i>&nbsp;
+										<a href="#" title="年终总结会上的讲话">年终总结会上的讲话</a>
+									</p>
+								</li>
+							</ul>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="content_middle-bottom">
+				<div class="container">
+					<div class="row">
+						<!--<div class="col-sm-3 col-md-3 col-xs-6 bottom_grid1">
+							<a href="#" class="b-link-diagonal b-animate-go  thickbox">
+								<img src="images/pic1.jpg" class="img-responsive" alt="" />
+								<div class="b-wrapper">
+									<h2 class="b-animate b-from-left    b-delay03 "><img src="images/hover_search.png" alt=""/></h2>
+									<p class="b-animate b-from-right    b-delay03 "> </p>
+								</div>
+							</a>
+							<div class="grid_desc">
+								<h4><a href="#">提案系统</a></h4>
+							</div>
+						</div>-->
+						<div class="col-sm-3 col-md-3 col-xs-6 bottom_grid1">
+							<a href="#" class="b-link-diagonal b-animate-go  thickbox">
+								<img src="images/pic2.jpg" class="img-responsive" alt="" />
+								<div class="b-wrapper">
+									<h2 class="b-animate b-from-left    b-delay03 "><img src="images/hover_search.png" alt=""/></h2>
+									<p class="b-animate b-from-right    b-delay03 "> </p>
+								</div>
+							</a>
+							<div class="grid_desc">
+								<h4><a href="#">群团管理系统</a></h4>
+							</div>
+						</div>
+						<div class="col-sm-3 col-md-3 col-xs-6 bottom_grid1">
+							<a href="#" class="b-link-diagonal b-animate-go  thickbox">
+								<img src="images/pic3.jpg" class="img-responsive" alt="" />
+								<div class="b-wrapper">
+									<h2 class="b-animate b-from-left    b-delay03 "><img src="images/hover_search.png" alt=""/></h2>
+									<p class="b-animate b-from-right    b-delay03 "> </p>
+								</div>
+							</a>
+							<div class="grid_desc">
+								<h4><a href="#">大病救助</a></h4>
+							</div>
+						</div>
+						<!--<div class="col-sm-3 col-md-3 col-xs-6">
+							<a href="#" class="b-link-diagonal b-animate-go  thickbox">
+								<img src="images/pic4.jpg" class="img-responsive" alt="" />
+								<div class="b-wrapper">
+									<h2 class="b-animate b-from-left    b-delay03 "><img src="images/hover_search.png" alt=""/></h2>
+									<p class="b-animate b-from-right    b-delay03 "> </p>
+								</div>
+							</a>
+							<div class="grid_desc">
+								<h4><a href="#">教职工服务系统</a></h4>
+							</div>
+						</div>-->
+					</div>
+				</div>
+			</div>
+			<div class="tweets">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-1"></div>
+						<div class="col-md-10 tweet_grid">
+							<h3 class="m_9">社区动态排行 </h3><span class="follow" class="pull-right"><a href="#">+ 更多</a></span>
+
+							<div class="clear"></div>
+							<hr>
+							<ul class="tweet_list">
+								<!--<div class="tweet_list-top">
+									<li>
+										<a href="#">武汉大学2016-3017年度师德标兵拟表彰人选公示</a>
+									</li>
+
+								</div>-->
+								<div class="tweet_list-top">
+									<li>
+										<a href="#">关于表彰第十二届“杰出青年（教职工）的通知”</a>
+									</li>
+								</div>
+								<div class="tweet_list-top">
+									<li>
+										<a href="#">推荐张沪寅教授为“2017年湖北省师德标兵”候选人的公示</a>
+									</li>
+								</div>
+								<div class="tweet_list-top">
+									<li>
+										<a href="#">关于开展第十二届“杰出青年（教职工）”评选表彰活动的通知</a>
+									</li>
+								</div>
+								<button type="button" class="btn btn-red pull-right">我要投稿</button>
+								<div class="tweet_list-top">
+									<li>
+										<a href="#">关于举办女教职工庆三八“传优良家风，诵经典故事”经典诵读比赛的通知</a>
+									</li>
+								</div>
+								<div class="tweet_list-top">
+									<li>
+										<a href="#">关于开展庆祝“三八”国际劳动妇女节系列活动的通知</a>
+									</li>
+								</div>
+							</ul>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2">
+						<h4 class="m_7" style="color: #c80000;">友情链接</h4>
+					</div>
+					<div class="col-md-10">
+						<ul class="footer_list1">
+
+							<li>
+								<a href="http://www.whu.edu.cn/">社区服务oto</a>
+							</li>
+							<li>
+								<a href="http://info.whu.edu.cn/xxgkqd/jbxx/jgdbdhqk/xgzd.htm">社区医院</a>
+							</li>
+							<li>
+								<a href="http://www.acftu.org/">社区卫生服务中心</a>
+							</li>
+							<li>
+								<a href="http://www.acftu.org/">社区医院</a>
+							</li>
+						</ul>
+						<!--<ul class="footer_list1">
+							<li>
+								<a href="http://jkwwt.acftu.org/">中国教科文卫体工会</a>
+							</li>
+							<li>
+								<a href="http://www.hbzgh.org.cn/">湖北省总工会</a>
+							</li>
+							<li>
+								<a href="http://ghxt.cic.tsinghua.edu.cn/ghxt_web/">清华大学工会</a>
+							</li>
+							<li>
+								<a href="http://www.gh.pku.edu.cn/">北京大学工会</a>
+							</li>
+						</ul>-->
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer_bottom">
+			<div class="container">
+				<ul class="footer_bottom-list">
+					<li>
+						电话：027-68764426
+					</li>
+					<li>
+						地址：湖北省武汉市
+					</li>
+					<li>
+						邮编：430072
+					</li>
+					<li>
+						技术支持：武汉云谷创想科技有限公司
+					</li>
+				</ul>
+				<div class="copy">
+					<p>  邮编：430072 
+						<a target="_blank" href="http://www.cssmoban.com/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a>
+					</p>
+			    </div>
+			<div class="clear"></div>
+		  </div>
+
+		</div>
+
+	</body>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/toucher.js"></script>
+	<!--轮播手滑特效-->
+	<!--轮播手滑特效-->
+	<script>
+		var myTouch = util.toucher(document.getElementById('myCarousel'));
+		myTouch.on('swipeLeft', function(e) {
+			$('#carright').click();
+		}).on('swipeRight', function(e) {
+			$('#carleft').click();
+		});
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.carousel').carousel({
+				interval: 3500
+			})
+		});
+	</script>
+
+</html>
